@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Цветы</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-rows: 200px 200px 200px;
+                grid-template-columns: 1fr 1fr 1fr;
+                background: #fff;
+                grid-gap: 1vw;
+            }
+            .p,
+            .flower1,
+            .text,
+            .flower2,
+            .flower3,
+            .flower4,
+            .v {
+                text-align: center;
+                font-style: oblique;
+                font-family: 'Arial';
+            }
+            .p {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                background: #ff8c00;
+                padding: 4vw;
+                font-weight: bold;
+                font-size: 3vw;
+            }
+            .flower1 {
+                grid-row-start: 2;
+                grid-column-start: 1;
+            }
+            .text {
+                grid-row-start: 2;
+                grid-row-end: 5;
+                grid-column-start: 2;
+                text-align: center;
+                font-size: 18px;
+                background: #f0e68c;
+            }
+            .flower2 {
+                grid-row-start: 2;
+                grid-column-start: 3;
+            }
+            .flower3 {
+                grid-row-start: 4;
+                grid-column-start: 1;
+            }
+            .flower4 {
+                grid-row-start: 4;
+                grid-column-start: 3;
+            }
+            .v {
+                grid-row-start: 5;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                background: #ff8c00;
+                padding: 4vw;
+                font-size: 2vw;
+            }
+            @media all and (max-width: 700px) {
+                .grid {
+                    display: grid;
+                    grid-template-rows: 100px;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1vw;
+                }
+                .p {
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                    text-align: center;
+                    padding: 10vw;
+                    font-size: 4vw;
+                }
+                .flower1 {
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 1;
+                }
+                .flower2 {
+                    grid-row-start: 6;
+                    grid-row-end: 8;
+                    grid-column-start: 1;
+                }
+                .text {
+                    grid-row-start: 8;
+                    grid-row-end: 10;
+                    grid-column-start: 1;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                .flower3 {
+                    grid-row-start: 10;
+                    grid-row-end: 12;
+                    grid-column-start: 1;
+                }
+                .flower4 {
+                    grid-row-start: 12;
+                    grid-row-end: 14;
+                    grid-column-start: 1;
+                }
+                .v {
+                    grid-row-start: 14;
+                    grid-row-end: 15;
+                    grid-column-start: 1;
+                    padding: 4vw;
+                    font-size: 2vw;
+                    text-align: center;
+                }
+            }
+
+            @media all and (min-width: 700px) and (max-width: 900px) {
+                .grid {
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 1vw;
+                }
+                .p {
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    padding: 9vw;
+                    font-size: 4vw;
+                }
+                .flower1 {
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 1;
+                }
+                .flower2 {
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                    grid-column-start: 2;
+                }
+                .text {
+                    grid-row-start: 6;
+                    grid-row-end: 8;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    text-align: center;
+                }
+                .flower3 {
+                    grid-row-start: 8;
+                    grid-row-end: 10;
+                    grid-column-start: 1;
+                }
+                .flower4 {
+                    grid-row-start: 8;
+                    grid-row-end: 10;
+                    grid-column-start: 2;
+                }
+                .v {
+                    grid-row-start: 10;
+                    grid-row-end: 11;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="p">Цветы прощения</div>
+            <div class="flower1">
+                <img src="./image/цв_1.jpg" width="350" height="420" />
+            </div>
+            <div class="text">
+                <pre>
+    В белоснежном платье, как снежинка,
+    То ли в гости, то ли в отчий дом,
+    Шла девчонка вьющейся тропинкой
+    И несла букет живых цветов.
+                    
+    Стройная, как тополь серебристый,
+    Весела, как звонкий ручеек,
+    Что-то нежно ей шептали листья,
+    Улыбался каждый лепесток.
+                    
+    Гладили кудрявую головку
+    Солнышка волшебные лучи.
+    А она, счастливая девчонка,
+    Целовала розы лепестки.
+                    
+    И в глазах – лучащихся росинках –
+    Полыхала цветью неба синь,
+    И вот-вот, казалось, что пушинкой
+    Вдруг взлетит над шелестом осин.
+                    
+    Шла и пела голосом счастливым,
+    Вторила ей музыка весны,
+    И кругом светлее становилось
+    От сверкавшей платья белизны.
+                    
+    Что-то замаячило в сторонке,
+    И, жестоко брошенной рукой,
+    К платью белоснежному девчонки
+    Вдруг прилип с травою грязный ком.
+                    
+    Словно ничего не понимая,
+    Девочка рассматривала грязь,
+    И мальчишка, руки потирая,
+    Нагло улыбался, щуря глаз.
+                    
+    Не всплакнула, не назвала хамом
+    Гордого виновника в ответ,
+    А с улыбкой светлой хулигану
+    Бросила душистый свой букет.
+                    
+    И мотнув короткой рыжей стрижкой
+    (Сердце есть и у озорника),
+    Убежал пристыженный мальчишка
+    С пересохшей грязью на руках.
+                    
+    Если злые люди в вашей жизни
+    Вдруг оставят грязные следы,
+    Вы подобно девочке-снежинке
+    Бросьте в них прощения цветы.</pre
+                >
+            </div>
+            <div class="flower2">
+                <img src="./image/цв_2.jpg" width="350" height="420" />
+            </div>
+            <div class="flower3">
+                <img src="./image/цв_3.jpg" width="350" height="420" />
+            </div>
+            <div class="flower4">
+                <img src="./image/цв_4.jpg" width="350" height="420" />
+            </div>
+            <div class="v">Цветы прекраснее слов!</div>
+        </div>
+    </body>
+</html>
